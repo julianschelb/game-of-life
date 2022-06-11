@@ -1,2 +1,2 @@
-# game-of-life
+# Game of Life
 Implementation of Conway's Game of Life.
