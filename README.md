@@ -1,6 +1,8 @@
 # Game of Life
 Python implementation of Conway's Game of Life (see [https://cs.stanford.edu/](https://cs.stanford.edu/people/eroberts/courses/soco/projects/2001-02/cellular-automata/walks%20of%20life/patterns.html))
 
+![](screenshot.png)
+
 ## About
 
 *from [https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)*
