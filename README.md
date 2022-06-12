@@ -1,5 +1,5 @@
 # Game of Life
-Python implementation of Conway's Game of Life.
+Python implementation of Conway's Game of Life (see [https://cs.stanford.edu/](https://cs.stanford.edu/people/eroberts/courses/soco/projects/2001-02/cellular-automata/walks%20of%20life/patterns.html))
 
 ## About
 
@@ -25,3 +25,25 @@ These rules, which compare the behavior of the automaton to real life, can be co
 * All other live cells die in the next generation. Similarly, all other dead cells stay dead.
 
 The initial pattern constitutes the seed of the system. The first generation is created by applying the above rules simultaneously to every cell in the seed, live or dead; births and deaths occur simultaneously, and the discrete moment at which this happens is sometimes called a tick. Each generation is a pure function of the preceding one. The rules continue to be applied repeatedly to create further generations.
+
+## Install Dependencies
+
+```
+pip install -r requirements.txt
+```
+
+## Run
+
+Options:
+```
+Options:
+  --width INTEGER   Width of grid.
+  --height INTEGER  Height of grid.
+  --fps INTEGER     Refresh rate of grid
+  --help            Show this message and exit.
+```
+
+Run the simulation:
+```
+python main.py
+```
