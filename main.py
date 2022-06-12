@@ -8,15 +8,17 @@ from game import Grid
 
 
 @click.command()
-@click.option("--width", default=100, help="Width of the draw grid.")
-@click.option("--height", default=30, help=" Height of draw grid.")
-def main(width, height):
-    game = Grid(width, height)
-    print(width, height)
-    # click.echo(click.style("Hello World!", fg="green"))
+@click.option("--width", default=80, help="Width of grid.")
+@click.option("--height", default=25, help="Height of grid.")
+@click.option("--fps", default=4, help="Refresh rate of grid")
+def main(width, height, fps):
 
+    # Initializing the grid
+    game = Grid(width, height)
+
+    # Keep updating the grid
     while True:
-        time.sleep(1)
+        time.sleep(1 / fps)
         game.update()
 
 
